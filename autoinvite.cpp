@@ -1,7 +1,7 @@
 //Channel Services Autojoin module by QueenElsa
 //USAGE:
 // -- Compile module.
-// -- Load into ZNC (/znc loadmod cscautojoin) 
+// -- Load into ZNC (/znc loadmod autoinvite) 
 // -- Set a channel to AutoInvite (/msg X modinfo #regchanname INVITE ON) You need 100 acc to higher to do this.
 // -- Quit and Reconnect. 
 //Enjoy! 
