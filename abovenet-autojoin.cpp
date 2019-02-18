@@ -2,7 +2,7 @@
 //USAGE:
 // -- Compile module.
 // -- Load into ZNC (/znc loadmod autojoin) 
-// -- Set a channel to AutoInvite (/msg X modinfo #regchanname INVITE ON) You need 100 acc to higher to do this.
+// -- Set a channel to AutoInvite (/msg Z modinfo #regchanname INVITE ON) You need 100 acc to higher to do this.
 // -- Quit and Reconnect. 
 //Enjoy! 
 
@@ -78,15 +78,6 @@ public:
 			PutModule("If you need help with something, type HELP and I'll tell you what I can do.");
 			}
 		}	
-		
-		/*
-		EModRet OnStatusCommand(CString& sCommand) override {
-        if (sCommand.Equals("autojoin")) {
-            PutStatus("[MODULE: Autojoin] The autojoin module is loaded and currently monitoring all invites your nick receives.");
-            return HALT;
-			}
-		}
-		*/
 };
 
 NETWORKMODULEDEFS(Cautojoin, "Autojoin on /invite from AboveNet Channel Services.")
